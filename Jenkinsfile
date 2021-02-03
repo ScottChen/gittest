@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('add-text') {
+      steps {
+        writeFile(file: '1.txt', text: 'testtest', encoding: 'utf-8')
+      }
+    }
+
   }
 }
